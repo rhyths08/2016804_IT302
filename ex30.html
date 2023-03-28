@@ -1,0 +1,48 @@
+<html>
+<title>Guessing Game</title>
+<link rel="stylesheet" href="css/ex30.css" type="text/css" />
+
+<head>
+
+</head>
+
+<body>
+    <h1>Guess the Number</h1>
+    <div id="ran" class="dec">
+        <label>Type a number: </label>
+        <input type="number" id="playerNumber" value="" size="10">
+        <br><br>
+        <button onclick="result()">My guess</button>
+    </div>
+    <script type="text/javascript">
+        alert("Guess a number between 1 and 1000");
+
+        var number = random();
+        var guess = 1;
+
+        function random(min, max) {
+            return (Math.floor(Math.random() * 1000 + 1));
+        }
+
+        function result() {
+
+
+            if (parseInt(document.getElementById("playerNumber").value) > number) {
+                guess++;
+                alert("Too high\n\nTry again. It is:  " + number);
+            } else if (parseInt(document.getElementById("playerNumber").value) < number) {
+                guess++;
+                alert("Too low\n\nTry again. It is: " + number);
+            } else {
+                alert("Congratulations!!\n\nYou guessed the number in " + guess + " times. It is: " + number);
+                number = random(1, 1000);
+            }
+            document.getElementById("playerNumber").value = "";
+            document.getElementById("playerNumber").focus();
+        }
+    </script>
+</body>
+</script>
+</body>
+
+</html>

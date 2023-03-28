@@ -1,0 +1,42 @@
+.header {
+    height: 75%;
+    width: 75%;
+    margin-top: 60px;
+    margin-left: 150px;
+    padding: 35px;
+    background-color: rgb(182, 127, 255);
+    outline: solid 15px rgba(187, 0, 255, 0.39);
+    box-shadow: 0px 0px 15px black;
+    border-radius: 2.5%;
+    display: grid;
+    justify-content: center;
+    background: radial-gradient(rgba(244, 25, 255, 0.738), rgba(165, 0, 108, 0.863));
+}
+
+.header>h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+}
+
+.header>p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.conb {
+    background-color: rgb(255, 255, 255);
+    color: rgb(176, 0, 176);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    margin-left: 13.8rem;
+}
+
+a{
+    display: block;
+    border: 2px dotted black;
+}

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/ex26.css" type="text/css" />
+</head>
+
+<body>
+    <div id="center" class="clockk"></div>
+
+    <button onClick="x=setInterval(start,1000);">Start</button>
+    <button onClick="clearInterval(x)">Stop</button>
+    <script>
+        block = document.getElementById("center");
+        count = 0;
+
+        function start() {
+            count++;
+            block.innerHTML = count;
+        }
+    </script>
+</body>
+
+</html>

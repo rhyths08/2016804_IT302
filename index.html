@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link href="css\indexstyle.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1> ASSIGNMENT 2 </h1>
+        <p> Rhythm Pandey <br> BTBTI20185 <br>2016804</p>
+        <div  id="rep" class="container">
+            <button onClick=" add(); " class="conb">View</button>
+        </div>
+    </div>
+    
+    <script>
+        function add() {
+            add = document.getElementById("rep");
+            add.innerHTML= document.write('<table id="Btable" height=100% width=100%>');
+                var k =1;
+            for(i=1;i<=30;i=i+5)
+            {
+                add.innerHTML= document.write('<tr align=center color>');
+                for(j=1;j<=5;j++)
+                {
+                    /*var cell = row.insertCell(j);
+                    cell.innerHTML= document.write('<a href= ex' + k + '.html target=_blank>' + 'EX' + k + '</a>');
+                    k++;*/
+                    //add.innerHTML = document.write('<td style="background-color: rgba(187, 0, 255, 0.39)"><form action = "ex'+k+'.html" target=_blank><button>EX'+k+'</button></form></td>');
+                    add.innerHTML = document.write('<td style="background-color: rgba(187, 0, 255, 0.39);"><a href= ex' + k + '.html target=_blank style="display: block; height: 100%; width: 100%;">EX' + k + '</a></td>');
+                    k++;
+                }
+                add.innerHTML= document.write('</tr>');
+            }
+            add.innerHTML= document.write('</table>')
+        }
+    </script>
+</body>
+
+</html>

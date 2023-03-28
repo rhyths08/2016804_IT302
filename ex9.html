@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Registration</title>
+	</head>
+	<body>
+		<table border = 8 height = 50% width = 50% bgcolor = beige cellspacing = 10 cellpadding = 20>
+			<tr bgcolor = cyan>
+				<td colspan=4 align=center> <h1> User Feedback form </h1> </td>
+			<tr bgcolor = cyan>
+				<td > <label> Username: </label> </td>
+				<td colspan=3> <input type=text name=uname/> </td>
+			</tr>
+			<tr bgcolor = cyan>
+				<td > <label> Password:  </label> </td>
+				<td colspan=3> <input type=password  name=pass/> </td>
+			</tr>
+			<tr bgcolor = cyan>
+				<td> <label> Gender: </label></td>
+				<td> 
+					<input type=radio name=gender value=m /> 
+					<label> male</label> 
+				</td>
+				<td colspan=2> 
+					<input type=radio name=gender value=f />
+					<label> female: </label><br><br> 
+				</td>
+			</tr>
+			<tr bgcolor = cyan>
+				<td> <label> Rate us </label></td>
+				<td>
+					<input type=radio name=good value=good /><label> Good</label>
+				</td>
+
+				<td>
+					<input type=radio name=Average value=Average /><label> Average</label>
+				</td>
+
+				<td>
+					<input type=radio name=bad value=bad /><label> Bad</label>
+				</td>
+			</tr>
+			<tr bgcolor = cyan>
+				<td> <label> Product </label></td>
+				<td>
+					<select name=Product>
+						<option value=btit > Mobile </option>
+						<option value=btcs > Laptop </option>
+						<option value=btmt > Computer </option>
+					</select>
+				</td>
+                <td><label> Comments: </label></td>
+				<td>
+					<textarea row=4 column=50>Any comments......</textarea><br><br>
+				</td>
+			</tr>
+			<tr bgcolor = cyan>
+				<td colspan=2><input type=submit value="Register Now" /></td>
+				<td colspan=2><input type=reset /></td>
+			</tr>
+		</table>
+	</body>
+</html>

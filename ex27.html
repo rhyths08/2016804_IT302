@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/EX27.css" type="text/css" />
+</head>
+
+<body>
+    <div id="clock" class="clockk">
+    </div>
+    <script>
+        function clock() {
+            d = new Date();
+            hr = d.getHours();
+            min = d.getMinutes();
+            ss = d.getSeconds();
+            if (hr >= 0 && hr <= 9)
+                hr = "0" + hr;
+            if (min >= 0 && min <= 9)
+                min = "0" + min;
+            if (ss >= 0 && ss <= 9)
+                ss = "0" + ss;
+            cTime = hr + " : " + min + " : " + ss;
+            x = document.getElementById("clock");
+            x.innerHTML = cTime;
+        }
+        setInterval(clock, 1000);
+    </script>
+</body>
+
+</html>
